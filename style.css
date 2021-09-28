@@ -1,0 +1,297 @@
+* {
+	font-family: 'Hina Mincho', sans-serif;
+	font-size: 30px;
+}
+
+body{
+	background-color: #2B4676; 
+}
+
+.topbox {
+	position:absolute;
+	background-color:none;
+	width: 224px;
+	height: 224px;
+	top: 0px;
+	left: 8vw;
+	border-radius: 50%;
+	margin-top: -112px;
+}
+
+.topbox:hover {
+	background-color:rgba(255,255,255,0.8);
+	transition: all 1s ease;
+}
+
+
+.navbar {
+  overflow: hidden;
+  font-family: Arial;
+	margin-right: 8vw;
+}
+
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+	padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.dropdown {
+	float: right;
+  overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+  cursor: pointer;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:rgba(0,0,0,0.4);
+	transition: all 1s ease;
+}
+
+
+.dropdown-content {
+  opacity: 0;
+  transition: all 1s ease;
+  position: absolute;
+  background-color:rgba(255,255,255,0.3);
+  width: 82px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(65, 65, 65, 0.4);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown-content a:hover {
+  background-color: rgb(214, 212, 212);
+}
+
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes two{
+    50%{color: rgba(255,255,255,0)}
+}
+#two {
+    animation: two 2s infinite;
+    color:rgba(0,0,0,0.4);
+}
+
+@keyframes three{
+    50%{color: rgba(255,255,255,0)}
+}
+#three {
+    animation: three 3s infinite;
+    color:rgba(0,0,0,0.4);
+}
+
+@keyframes five{
+    50%{color: rgba(255,255,255,0)}
+}
+#five {
+    animation: five 5s infinite;
+    color:rgba(0,0,0,0.4);
+}
+
+@keyframes seven{
+    50%{color: rgba(255,255,255,0)}
+}
+#seven {
+    animation: seven 7s infinite;
+    color:rgba(0,0,0,0.4);
+}
+
+@keyframes ten{
+    50%{color: rgba(255,255,255,0)}
+}
+#ten {
+    animation: ten 10s infinite;
+    color:rgba(0,0,0,0.4);
+}
+
+
+.columnfa {
+	position: relative;
+	float: left;
+	width: 50%;
+	background-color:white;
+	top:27vh;
+	left:-20vw;
+	border-radius: 2vh;
+}
+
+.column {
+	position: relative;
+	float: left;
+	width: 50%;
+	background-color: white;
+	top: 27vh;
+	border-radius: 2vh;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.modal {
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	left: 0;
+	top: 5%;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+}
+
+
+.modal-content {
+	background-color: white;
+	margin: auto;
+	padding: 20px;
+	border-radius: 15px;
+	margin-bottom: 5%;
+	width: 80%;
+}
+
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.button-container {
+	width: 70%;
+	margin: auto;
+	overflow-y: auto;
+}
+
+.button-container > button {
+	width: 21vw;
+	height: 21vw;
+	float: left;
+	margin: 5px;
+	border-radius: 15px;
+	background:white;
+	cursor: pointer;
+}
+
+.wrap {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+
+.bounce {
+	animation-iteration-count: infinite;
+	animation-duration: 0.3s;
+	animation: bounce 3.5s ease infinite;
+	transform-origin: 50% 50%;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+
+	5.55556% {
+		transform: translateY(0);
+	}
+
+	11.11111% {
+		transform: translateY(0);
+	}
+
+	22.22222% {
+		transform: translateY(-15px);
+	}
+
+	27.77778% {
+		transform: translateY(0);
+	}
+
+	33.33333% {
+		transform: translateY(-15px);
+	}
+
+	44.44444% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #3dc9fc;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	border-radius:15px;
+	transition: .5s ease;
+}
+
+.myBtn {
+	position:relative;
+}
+.myBtn:hover .overlay {
+	height: 100%;
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}

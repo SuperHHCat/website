@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>The Home of Austin</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/jpg" href="/favicon.ico" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/bd8904dfe4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<div class="topbox">
+		<a href="index.html" title="Home">
+			<img src="img/falconaw.png" style="height:95px; width: 140px; position:absolute; margin-left: 50px; margin-top:115px;">
+		</a>
+	</div>
+	<div class="topblur"></div>
+
+	<div class="navbar">
+		<div class="dropdown">
+			<button class="dropbtn"><i class="material-icons" style="font-size:50px;">menu</i></button>
+			<div class="dropdown-content">
+				<a href="about.html" title="About Me"><i class="material-icons" style="color:deepskyblue; font-size:50px;">person</i></a>
+				<a href="achievements.html" title="Achievements"><i class="fas fa-trophy" style="color:orange; font-size:50px;"></i></a>
+				<a href="work.html" title="Selected Projects"><i class="fas fa-pencil-ruler" style="color:lightgreen; font-size:50px;"></i></a>
+				<a href="volunteering.html" title="Volunteering, internships, clubs, and jobs"><i class="material-icons" style="color:lightpink; font-size:50px;">favorite</i></a>
+				<a href="contact.html" title="Contact"><i class="material-icons" style="color:#fee12b; font-size:50px;">email</i></a>
+			</div>
+		</div>
+	</div>
+
+
+	<div style="z-index:-1; background-color:rgba(255,255,255,0.3); position:absolute; width: 100%; height: 100%; left:0; top:0;"></div>
+	<i class="fas fa-pencil-ruler" style="color:lightgreen; font-size:300px; position:absolute; left:40vw; top:25vh;"></i>
+	<h1 style="font-family:'Righteous'; font-size:15vh; color:lightgreen; margin-top:27%; text-align:center;">Selected Projects</h1>
+
+
+
+	<div class="wrap">
+		<i class="material-icons animated bounce" title="Scroll Down!" style="color:white; font-size:5vw; margin-top:-500px;">expand_more</i>
+	</div>
+
+
+
+
+
+
+	<h1 id="seven" style="text-align: center; margin-top: 100px; color: white;">"I find that the harder I work the more luck I seem to have."  ―Thomas Jefferson</h1>
+
+	<div class="button-container" style="margin-top: 5%; margin-bottom: 5%;">
+
+
+		<button class="myBtn" style="background: url(img/writing.jpeg); background-size: cover;"><div class="overlay"><div class="text">Short Stories and More!</div></div></button>
+		<div class="modal">
+			<div class="modal-content" style="border: 15px inset lightgreen;">
+				<div class="modal-header">
+					<span class="close">×</span>
+					<h2>Some Prose</h2>
+				</div>
+				<div class="modal-body">
+					<div class="container" style="display: flex;">
+						<div style="width: 30%;">
+							<img style="width: 100%; border-radius: 15px;" src="img/writing.jpeg" />
+						</div>
+						<div style="flex-grow: 1; width: 50%; padding: 2%;">
+							<p style="font-size:smaller;">I decided to share some of my prose*, including a couple I just wrote for the KPL Youth Connectors Program prompt for the month of August ("If I Could Fly" for the prompt "superpower") and September ("The Blue Flower" for the prompt "your favourite colour"), where selected volunteers create art or short stories that will be distributed by the library to retirement homes and other places. I also included Dog Walk, which won Second Prize in the Polar Expressions National Short Story Contest. I really hope you enjoy!</p>	
+							<p style="font-size:smaller;">*Available upon request, please contact me!</p>					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<button class="myBtn" style="background: url(img/water.jpeg); background-size: cover;"><div class="overlay"><div class="text">SHAD Design Team Project: Aquahome</div></div></button>
+		<div class="modal">
+			<div class="modal-content" style="border: 15px inset lightgreen;">
+				<div class="modal-header">
+					<span class="close">×</span>
+					<h2>SHAD Project Aquahome (July 2021)</h2>
+				</div>
+				<div class="modal-body">
+					<div class="container" style="display: flex;">
+						<div style="width: 50%;">
+							<img style="width: 100%; border-radius: 15px;" src="img/SHADDrawing.png" />
+							<img style="width: 50%; height: 30%; border-radius: 15px;" src="img/prototype.jpg" />
+							<img align="right" style="width: 48%; height: 30%; border-radius: 15px;" src="img/SHADRender.jpg" />
+						</div>
+						<div style="flex-grow: 1; width: 50%; padding: 2%;">
+							<p style="font-size:smaller;">Our team’s SHAD Conference Design Project, Aquahome, focused on designing a suite of hardware devices that are connected to a mobile app to track water consumption and provide analysis for improving daily water reduction efficiency. By using AquaHome, a family of four in London, Ontario could save over $75 each month by reducing their daily water usage from 329 litres to 100 litres.</p>
+							<p style="font-size:smaller;">I led hardware and firmware development. Perhaps my most valuable contribution was my method of real-time water analysis. Inspired by the changing transparency of the water column I observed while washing my hands, I decided to look for a way of measuring water flow from a distance by examining brightness, a "water photometer". The algorithm I developed utilized a brightness sensor on a microcontroller to determine the flow rate of a water stream based on a model created with machine learning. From there, I could use integral calculus to determine the volume of water that has been used. All of this was coded in Python and uploaded onto the microcontroller. Testing resulted in an error percentage of 1.8%. </p>
+							<p style="font-size:smaller;">For our product design and hardware, after designing the concept with the team, I created CAD models for our inventions on Onshape CAD Software, which I gave to my fellow team members to render and generate concept art. I focused on a modern industrial design style for our project.</p>
+							<p style="font-size:smaller;">Finally, I collaborated with our team to generate ideas for marketing, design, and app development which were used in our final project materials.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button class="myBtn" style="background: url(img/calendar.jpeg); background-size: cover;"><div class="overlay"><div class="text">Schedule On 3 - an autoscheduler</div></div></button>
+		<div class="modal">
+			<div class="modal-content" style="border: 15px inset lightgreen;">
+				<div class="modal-header">
+					<span class="close">×</span>
+					<h2>Schedule On 3 (Aug 2021)</h2>
+				</div>
+				<div class="modal-body">
+					<div class="container" style="display: flex;">
+						<div style="width: 50%;">
+							<img style="width: 70%; border-radius: 15px;" src="img/gifCalendar.gif" />
+						</div>
+						<div style="flex-grow: 1; width: 50%; padding: 2%;">
+							<p style="font-size:smaller;">For this application, I decided to solve a long-standing issue that my friends and I have had. We always had trouble scheduling events and hangouts due to everyone's busy schedules, so I created a smart scheduling app that automatically calculates possible dates available in three easy steps. I first wrote the algorithm in Python, and translated it into Flutter/Dart so I could use an app UI.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button class="myBtn" style="background: url(img/clipboard.jpeg); background-size: cover;"><div class="overlay"><div class="text">minima[list] - a minimalist list app)</div></div></button>
+		<div class="modal">
+			<div class="modal-content" style="border: 15px inset lightgreen;">
+				<div class="modal-header">
+					<span class="close">×</span>
+					<h2>minima[list]</h2>
+				</div>
+				<div class="modal-body">
+					<div class="container" style="display: flex;">
+						<div style="width: 50%;">
+							<img style="width: 49%; border-radius: 15px;" src="img/gifList.gif" />
+							<img style="width: 49%; border-radius: 15px;" src="img/listInChinese.png" />
+						</div>
+						<div style="flex-grow: 1; width: 50%; padding: 2%;">
+							<p style="font-size:smaller;">I have been curious about app programming for a while, ever since I learned frontend web development. How different could it be? So I decided to learn Flutter and Dart to program an app. This was the result! After reading the documentation, I decided to program a minimalistic scheduling app: minima[list]. This was because my mom and dad always complained about how the native scheduling apps like Google Calendar or Reminders were too complex and half the features they didn't use.</p>
+							<p style="font-size:smaller;">Thus, I programmed my app to have only the essentials: add and delete tasks, toggle tasks, prioritize tasks, and clear the list. I also provided a bonus randomly selected inspirational quote that shows up in the text field. Finally, I programmed in a dark mode which is easier on the eyes and can preserve battery life. My parents liked it so much they told me my uncle and cousins in China would probably love to use it to, so I made a version in Chinese and will be publishing it to the Google Play Store! I really enjoyed this project, and will for sure be making more apps in the future. I found my web and python background were very helpful and made the process of learning Flutter all the more intuitive as well.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<button class="myBtn" style="background: url(img/birds.jpeg); background-size: cover;"><div class="overlay"><div class="text">Boids (swarm simulation)</div></div></button>
+		<div class="modal">
+			<div class="modal-content" style="border: 15px inset lightgreen;">
+				<div class="modal-header">
+					<span class="close">×</span>
+					<h2>Boids (Jun-Jul 2021)</h2>
+				</div>
+				<div class="modal-body">
+					<div class="container" style="display: flex;">
+						<div style="width: 50%;">
+							<img style="width: 100%; border-radius: 15px;" src="img/gifBoids.gif" />
+						</div>
+						<div style="flex-grow: 1; width: 50%; padding: 2%;">
+							<p style="font-size:smaller;">I was interested in swarm intelligence, the behaviour of large groups of organisms, particularly after watching a murmuration of starlings chased by a bird of prey. Other cool examples include "bait balls" of fish formed during underwater feeding frenzies and locust swarms. This led me to research more into the emergent properties of swarms and how such complex behaviours can arise from a few simple rules, and I found a classic model by Craig Reynolds which I created in 2D. I am working on a version in 3D perhaps with obstacles and generations to simulate evolution by natural selection. In this model, "boids" fly according to three behaviours also observed in the natural world: separation-not crashing into another boid, alignment-staying in a flock for safety in numbers, and cohesion-steering towards the center of the flock because that is where it is safest (you can get picked off at the edge). I also created a predator class (red dot) and added the predation behaviour, steering away from predators. That way, I wanted to see whether the cool shapes and patterns flocks take is due to the fairly simple behaviours just detailed, or if perhaps they coordinate themselves on purpose to distract predators. Also see the links below for references and interesting reads.</p>
+							<a href="http://www.red3d.com/cwr/boids/">Craig Reynolds' Boids page</a><br />
+							<a href="https://youtu.be/DLuEwFblaN4">Starling Flock</a><br />
+							<a href="https://youtu.be/6zOarcL1BSc">Fish Bait Ball</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button class="myBtn" style="background: url(img/speedometer.jpeg); background-size: cover;"><div class="overlay"><div class="text">Electric Car Team</div></div></button>
+		<div class="modal">
+			<div class="modal-content" style="border: 15px inset lightgreen;">
+				<div class="modal-header">
+					<span class="close">×</span>
+					<h2>Bluevale Electric Car</h2>
+				</div>
+				<div class="modal-body">
+					<div class="container" style="display: flex;">
+						<div style="width: 50%;">
+							<img style="width: 100%; border-radius: 15px;" src="img/ecar.jpg" />
+							<img style="width: 100%; border-radius: 15px;" src="img/Ecar HW.png" />
+						</div>
+						<div style="flex-grow: 1; width: 50%; padding: 2%;">
+							<p style="font-size:smaller;">Ever since my first year in high school, I loved working in Bluevale's renowned and very successful electric car team. I have developed my CAD design, fabrication, and programming skills whilst working on our car, and we have won numerous awards including the 2019 TADA Cup at the UW EV Challenge. During races, I have worked on the pit crew and am scheduled to drive, and I am one of the sub-team leaders in the club.</p>
+							<p style="font-size:smaller;">In the 2019-2020 season (my first year), I joined a team tasked with designing and building steering. I helped with the design and creation of the parts. We also helped other teams when they needed us.</p>
+							<p style="font-size:smaller;">In the next 2 years I worked on and eventually led our data collection and analysis. I really loved how software and hardware united here. Our cars have an onboard cycle analyst which collects race data such as battery percentage and speeds. We programmed the onboard devices and worked on creating a method to transfer data to the pits for analysis in real-time. After consultation with previous team members, I learned that the natural methods such as radio transfer didn't work, mainly because of the size and buildings at the race track. I settled on a new method: wifi transfer. Wifi would be reliable and fast, provided we had a wifi signal which the campus did. We have completed our first few prototypes and hope to test and use it this year. I really enjoy working with my friends and leading our data team!</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button class="myBtn" style="background: url(img/typewriter.jpeg); background-size: cover;"><div class="overlay"><div class="text">Citizen Science</div></div></button>
+		<div class="modal">
+			<div class="modal-content" style="border: 15px inset lightgreen;">
+				<div class="modal-header">
+					<span class="close">×</span>
+					<h2>Citizen Science (2020-present)</h2>
+				</div>
+				<div class="modal-body">
+					<div class="container" style="display: flex;">
+						<div style="width: 50%;">
+							<img style="width: 49%; border-radius: 15px;" src="img/zooni.png" />
+							<img style="width: 49%; border-radius: 15px;" src="img/inat.png" />
+						</div> 
+						<div style="flex-grow: 1; width: 50%; padding: 2%;">
+							<p style="font-size:smaller;">After the research internship I was so excited for was cancelled, I decided to look online for any potential projects to do. I came across several platforms on which I have since logged many hours on. On Zooniverse, a reputable citizen science platform even used by NASA, I started by joining a project created by the University of Oxford. The project involved tracing mitochondria, vesicles, and endoplasmic reticulum on electron microscope (TEM) images which would help train an AI model as well as build a VR environment researchers could use to visualize the cell. This was right up my alley, especially given I was originally scheduled to help with microscopy at the lab internship, and that we had already studied these organelles at school and during my own studies. I also branched out, and found Zooniverse to be an amazing place to build my skills, such as learning to look to examine satellite images for nesting endangered Sandhill Cranes kelp, examining footage for rattlesnakes, penguins, and algae, and analyzing data from antibiotic resistance microarray experiments. I also utilized my cursive skills to transcribe manuscripts from naturalists of the 18th century for a museum including Sir Humphrey Davy's notes. Sir Humphrey Davy was a pioneering chemist with such achievements as discovering potassium, magnesium, sodium, calcium, and more for the first time and inventing the field of electrochemisty, as well as having Michael Faraday, another famous scientist, as his student. Overall, I found Zooniverse to be an amazing place to contribute and also surprisingly easy to start and use. Here is a list of the projects I've taken part in: Etch a Cell Series, DUNA, Microbe Watch, Plankton Portal, Penguin Watch, Bash the Bug, Placenta Profiles, Whooping Cranes, Project Rattlecam, Floating Forests, Snowflake ID. 1000+ classifications.</p>
+							<p style="font-size:smaller;">I've also been active on iNaturalist, with 200+ observations, and I continue to document and annotate any organisms I see on walks, travels... Data collected is shared with the community and could potentially be used for research purposes. My observations have been added to the Moths of Ontario project made by the Government of Canada, and the Help the Turtles Project by the Canadian Wildlife Foudnation. I loved using it as well as seeing what others have spotted in the area, and the app has made me focus more on the natural world. My account can be found here: <a href="https://www.inaturalist.org/observations?place_id=any&user_id=bcinaturehunt&verifiable=any" target="blank">iNaturalist Link</a> </p>
+							<a href="https://www.zooniverse.org/" target="blank">Zooniverse Link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button class="myBtn" style="background: url(img/array.jpeg); background-size: cover;"><div class="overlay"><div class="text">Pandemic Experiments</div></div></button>
+		<div class="modal">
+			<div class="modal-content" style="border: 15px inset lightgreen;">
+				<div class="modal-header">
+					<span class="close">×</span>
+					<h2>At-home Microscopy and Other Pandemic Experiments (Mar-Aug 2020)</h2>
+				</div>
+				<div class="modal-body">
+					<div class="container" style="display: flex;">
+						<div style="width: 50%;">
+							<img style="width: 49%; border-radius: 15px;" src="img/Microbefore.jpg" />
+							<img style="width: 49%; border-radius: 15px;" src="img/Microafter.jpg" />
+							<img style="width: 49%; height: 50%; border-radius: 15px;" src="img/Slide.jpg" />
+							<img style="width: 49%; height: 50%; border-radius: 15px;" src="img/Chroma.jpg" />
+						</div>
+						<div style="flex-grow: 1; width: 50%; padding: 2%;">
+							<p style="font-size:smaller;">I was able to make a few modifications and calibrations to a toy microscope I was given many years ago to prepare wet-mounts and image various cells, samples from a pond, fish tank, and other objects. I also got my hands on some chromatography paper and was able to isolate the pigments of a leaf using isopropyl alcohol as the liquid stage.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<button class="myBtn" style="background: url(img/flask.jpeg); background-size: cover;"><div class="overlay"><div class="text">Dr. Wilson's' Lab: Tissue Microarray</div></div></button>
+		<div class="modal">
+			<div class="modal-content" style="border: 15px inset lightgreen;">
+				<div class="modal-header">
+					<span class="close">×</span>
+					<h2>Tissue Microarray for WilsonLab (Jan-Mar 2020)</h2>
+				</div>
+				<div class="modal-body">
+					<div class="container" style="display: flex;">
+						<div style="width: 50%;">
+							<img style="width: 100%; border-radius: 15px;" src="img/Microarray.jpg" />
+						</div>
+						<div style="flex-grow: 1; width: 50%; padding: 2%;">
+							<p style="font-size:smaller;">During my short internship (sadly interrupted by the COVID-19 pandemic) at Dr. Jonathan Mark Wilson's lab in Laurier University I designed a tissue microarray mould at the MakerLab. I completed laboratory training and was scheduled to help with fluorescence microscopy of samples however the universities were closed shortly afterwards due to lockdown.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="script.js"></script>
+	<script>
+
+		var modal = document.getElementsByClassName('modal');
+
+		var btn = document.getElementsByClassName("myBtn");
+
+		var span = document.getElementsByClassName("close");
+
+
+		btn[0].onclick = function () {
+			modal[0].style.display = "block";
+		}
+		btn[1].onclick = function () {
+			modal[1].style.display = "block";
+		}
+		btn[2].onclick = function () {
+			modal[2].style.display = "block";
+		}
+		btn[3].onclick = function () {
+			modal[3].style.display = "block";
+		}
+		btn[4].onclick = function () {
+			modal[4].style.display = "block";
+		}
+        btn[5].onclick = function () {
+            modal[5].style.display = "block";
+		}
+        btn[6].onclick = function () {
+            modal[6].style.display = "block";
+		}
+        btn[7].onclick = function () {
+            modal[7].style.display = "block";
+		}
+        btn[8].onclick = function () {
+            modal[8].style.display = "block";
+        }
+
+
+
+		span[0].onclick = function () {
+			modal[0].style.display = "none";
+		}
+		span[1].onclick = function () {
+			modal[1].style.display = "none";
+		}
+		span[2].onclick = function () {
+			modal[2].style.display = "none";
+		}
+		span[3].onclick = function () {
+			modal[3].style.display = "none";
+		}
+		span[4].onclick = function () {
+			modal[4].style.display = "none";
+		}
+        span[5].onclick = function () {
+            modal[5].style.display = "none";
+		}
+        span[6].onclick = function () {
+            modal[6].style.display = "none";
+		}
+        span[7].onclick = function () {
+            modal[7].style.display = "none";
+		}
+        span[8].onclick = function () {
+            modal[8].style.display = "none";
+        }
+
+
+		window.onclick = function (event) {
+			if (event.target == modal[0]) {
+				modal[0].style.display = "none";
+			}
+			if (event.target == modal[1]) {
+				modal[1].style.display = "none";
+			}
+			if (event.target == modal[2]) {
+				modal[2].style.display = "none";
+			}
+			if (event.target == modal[3]) {
+				modal[3].style.display = "none";
+			}
+
+			if (event.target == modal[4]) {
+				modal[4].style.display = "none";
+			}
+
+            if (event.target == modal[5]) {
+                modal[5].style.display = "none";
+			}
+            if (event.target == modal[6]) {
+                modal[6].style.display = "none";
+			}
+            if (event.target == modal[7]) {
+                modal[7].style.display = "none";
+			}
+            if (event.target == modal[8]) {
+                modal[8].style.display = "none";
+            }
+		}
+	</script>
+	<script src="script.js"></script>
+</body>
+</html>
