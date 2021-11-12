@@ -80,6 +80,30 @@
 			</div>
 		</div>
 
+		<button class="myBtn" style="background: url(img/controller.jpeg); background-size: cover;"><div class="overlay"><div class="text">Making Games!</div></div></button>
+		<div class="modal">
+			<div class="modal-content" style="border: 15px inset lightgreen;">
+				<div class="modal-header">
+					<span class="close">×</span>
+					<h2>Games (September-October 2021)</h2>
+				</div>
+				<div class="modal-body">
+					<div class="container" style="display: flex;">
+						<div style="width: 30%;">
+							<img style="width: 100%; border-radius: 15px;" src="img/redguy.png" />
+							<img style="width: 100%; border-radius: 15px;" src="img/titlecharacter.png" />
+							<img style="width: 100%; border-radius: 15px;" src="img/p1controls.png" />
+						</div>
+						<div style="flex-grow: 1; width: 50%; padding: 2%;">
+							<p style="font-size:smaller;">I took part in Replit Kejam Game Jam, a fun game-building event where we are given one week to build a game centered around the theme "HUGE." I participated with two of my friends and we coded an arcade-style sumo-wrestling game. I took part in programming the physics of the characters and collision detection which we used image masking and linear algebra to simulate, and did all the sprite and background graphics.</p>					
+							<p style="font-size:smaller;">I am in the process of making a Chinese Army Chess game (one of my favourite board games) so I can play without the need of the judge, and a command-line reversi implementation.</p>		
+							<p style="font-size:smaller;">Play Sumo here!: <a href="https://replit.com/@StevenCao2/SumoGame?v=1" target = "blank">Repl Link</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 		<button class="myBtn" style="background: url(img/water.jpeg); background-size: cover;"><div class="overlay"><div class="text">SHAD Design Team Project: Aquahome</div></div></button>
 		<div class="modal">
@@ -342,6 +366,9 @@
 		btn[9].onclick = function () {
             modal[9].style.display = "block";
         }
+		btn[10].onclick = function () {
+            modal[10].style.display = "block";
+        }
 
 
 
@@ -374,6 +401,9 @@
         }
 		span[9].onclick = function () {
             modal[9].style.display = "none";
+        }
+		span[10].onclick = function () {
+            modal[10].style.display = "none";
         }
 
 
@@ -409,6 +439,9 @@
             }
 			if (event.target == modal[9]) {
                 modal[9].style.display = "none";
+            }
+			if (event.target == modal[10]) {
+                modal[10].style.display = "none";
             }
 		}
 	</script>
