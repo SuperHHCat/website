@@ -54,6 +54,8 @@
 
 
     <div class="button-container" style="margin-top: 5%; margin-bottom: 5%;">
+        
+        
         <button class="myBtn" style="background: url(img/parkwood2.jpg); background-size: cover;"><div class="overlay"><div class="text">Parkwood Seniors Community</div></div></button>
         <div class="modal">
             <div class="modal-content" style="border: 15px inset pink;">
@@ -70,14 +72,33 @@
                         <div style="flex-grow: 1; width: 50%; padding: 2%;">
                             <p style="font-size:smaller;">I am a proud long-time volunteer at Parkwood Retirement Home, my local retirement home. I began in 2018 in the cafe, where I served the residents coffee, cookies, and other snacks. I especially loved to talk and converse with the residents and their visitors, and sometimes joined helped out with the different activities and games as well, such as shuffleboard, bingo, and chess. I also played piano occasionally if the atmosphere was a bit quiet or shy. In the cafe, I also trained several new volunteers on what to do. Finally, there were some occasions involving arguments or conflict between residents in which I helped resolve or called a staff member or nurse capable of handling the issue.</p>
                             <p style="font-size:smaller;">In 2020, the lockdown occurred and I found myself unable to return to volunteering. I decided to figure out another way to contribute, and decided to host a virtual piano recital from my home. Originally I was a bit worried it wouldn't go well, but I was told the residents really enjoyed it. Ever since, I have played over 10 recitals and branched out to other retirement homes as far as Goderich! I continue to practice new pieces and perform virtually for the residents.</p>
-                            <p style="font-size:smaller;">Additionally, I was invited to join Parkwood's pilot program for JAVAConnects, a music club for retirement home residents. I also participated in a Wilfred Laurier University study about the program.</p>
+                            <p style="font-size:smaller;">Additionally, I was invited to join Parkwood's pilot program for JAVAConnects, a music club for retirement home residents. I also participated in a Wilfred Laurier University study about the program. Update: As of November 2021, essential volunteers which included myself are returning in-person to Parkwood Community (of course with safety precautions like COVID testing in place). I was very happy and glad to be back and see many of the residents I knew previously.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        
+        <button class="myBtn" style="background: url(img/CMH.jfif); background-size: cover;"><div class="overlay"><div class="text">Cambridge Memorial Hospital</div></div></button>
+        <div class="modal">
+            <div class="modal-content" style="border: 15px inset pink;">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Cambridge Memorial Hospital</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="container" style="display: flex; margin-top: 2%;">
+                        <div style="width: 30%;">
+                            <img align="right" style="width: 100%; margin-top:5%; border-radius: 15px;" src="img/CMHLogo.jfif" />
+                            <img align="right" style="width: 100%; margin-top:5%; border-radius: 15px;" src="img/cmhinside.jpeg" />
+                        </div>
+                        <div style="flex-grow: 1; width: 70%; padding: 2%;">
+                            <p style="font-size:smaller;">Honestly, I didn't expect to be able to volunteer at the hospital but here we are! As things are opening up, I am now an ambassador at Cambridge Memorial Hospital. After doing training and orientation, I now volunteer every week. My first few shifts have been really enjoyable and exciting. I primarily guide people to their destinations as well as delievering things to and fro, and have a descent grasp of the entire hospital!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <button class="myBtn" style="background: url(img/lionPuppet.jpeg); background-size: cover;"><div class="overlay"><div class="text">Lion Dance 🦁</div></div></button>
         <div class="modal">
@@ -397,6 +418,9 @@
         btn[12].onclick = function () {
             modal[12].style.display = "block";
         }
+        btn[13].onclick = function () {
+            modal[13].style.display = "block";
+        }
 
 
 
@@ -439,6 +463,9 @@
         span[12].onclick = function () {
             modal[12].style.display = "none";
         }
+        span[13].onclick = function () {
+            modal[13].style.display = "none";
+        }
 
 
         window.onclick = function (event) {
@@ -480,6 +507,9 @@
             }
             if (event.target == modal[12]) {
                 modal[12].style.display = "none";
+            }
+            if (event.target == modal[13]) {
+                modal[13].style.display = "none";
             }
         }
     </script>
